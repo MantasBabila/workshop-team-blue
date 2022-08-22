@@ -19,7 +19,7 @@ test.describe(1, () => {
         await expect(page.locator('css=.v-error__alert')).toContainText('Incorrect email or password');
     });
 
-    test('Error message should appear when logging in with incorrect credentials', async ({ page }) => {
+    test('Error message should appear when a number with 3 decimals is typed into the price field', async ({ page }) => {
         await page.goto('https://lunch.devbstaging.com/login-password');
         await page.locator('[name="email"]').type('admin2@sourceryacademy.com');
         await page.locator('[name="password"]').type('nera_svarbus31');
